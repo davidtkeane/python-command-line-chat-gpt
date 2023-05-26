@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # Import modules
 # This script enables you to search using ChatGPT on the command line
-# This Works - Use this script!
 
 import openai
 import os
@@ -22,7 +21,7 @@ file_name = "chatgpt-chat.txt"
 file_path = os.path.join(os.getcwd(), file_name)
 
 # Set response until otherwise cancelled
-prompt = input("🤖 How can I help you Ranger?\n")
+prompt = input("🤖 How can I help you my Lord?\n")
 
 def openai_create(prompt):
     response = openai.Completion.create(
@@ -47,7 +46,7 @@ def chat(prompt):
         with open(file_path, "a") as f:
             f.write("Question: " + message + "\n")
             f.write("Response: " + response + "\n\n")
-        message = input("🤖 What else can I help you with Ranger?\n")
+        message = input("🤖 What else can I help you with my Lord?\n")
     return history
 
 # rememeber
@@ -86,6 +85,6 @@ while prompt.lower() not in ("no", "n", "no!", "you can't", "you cant", "nothing
             f.write("Time: " + str(datetime.now()) + "\n")
             f.write("Response: " + response + "\n\n")
             print("🤖 " + response + "\n")
-        prompt = input("🤖 What else can I help you with Ranger?\n")
+        prompt = input("🤖 What else can I help you with my Lord?\n")
 
 print("🤖...")
