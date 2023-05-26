@@ -14,7 +14,7 @@ ChatGPT is a Python script that uses the OpenAI API to generate responses based 
 
 1. Clone the repository: `git clone https://github.com/davidtkeane/python-command-line-chat-gpt.git`
 2. Install the required dependencies using pip: `pip install -r requirements.txt`
-3. Add your own OpenAi API key to your .env file `https://platform.openai.com/` 
+3. Add your own OpenAi API key to your .env file, but first rename test.env to .env to make this work.`https://platform.openai.com/` 
 4. Free for a certain time, then 5 Euros a month, but I have had this for a few months now and I have only clocked up €1.87 cents so far. I use `https://chat.openai.com/` for most work, but love using my terminal and console! 
 5. Go run the file, see below. 🍔
 
