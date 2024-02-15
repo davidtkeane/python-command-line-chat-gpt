@@ -33,7 +33,6 @@ sleep(2.02)
 for i in tqdm(range(100), ncols=80, bar_format='{l_bar}{bar}|'):
     sleep(0.02)  # simulate a download
 
-
 # Set response until otherwise cancelled
 prompt = input("🤖 How can I help you my Lord?\n")
 

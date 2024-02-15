@@ -46,7 +46,6 @@ ChatGPT is a Python script that uses the OpenAI API to generate responses based 
 </a>
 </div>
 
-
 😃
 
 # ChatGPT
