@@ -14,11 +14,25 @@ load_dotenv()
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 # Set up the model and prompt
-model_engine = "text-davinci-003"
+model_engine = "gpt-3.5-turbo-instruct"
 
 # Set up the file path
 file_name = "chatgpt-chat.txt"
 file_path = os.path.join(os.getcwd(), file_name)
+
+# Welcome Banner
+print ("")
+print("Processing...............")
+print ("")
+sleep(2.02) 
+print("Welcome to the ChatGPT Voice Interface!")
+print("This is Version 2.0")
+print ("")
+print(colored("Created by David", 'green'))
+sleep(2.02) 
+for i in tqdm(range(100), ncols=80, bar_format='{l_bar}{bar}|'):
+    sleep(0.02)  # simulate a download
+
 
 # Set response until otherwise cancelled
 prompt = input("🤖 How can I help you my Lord?\n")
