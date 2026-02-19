@@ -61,6 +61,16 @@ ChatGPT is a Python script that uses the OpenAI API to generate responses based 
 5. Free for a certain time, then 5 Euros a month, but I have had this for a few months now and I have only clocked up €1.87 cents so far. I use `https://chat.openai.com/` for most work, but love using my terminal and console! 
 6. Go run the file, see below. 🍔
 
+### Nix Users
+
+If you use [Nix](https://nixos.org/), you can set up the development environment automatically:
+
+```bash
+nix-shell
+```
+
+This will provide Python with all required dependencies — no pip install needed.
+
 ## Usage
 
 To start a conversation with the chatbot, run the following command:
@@ -87,4 +97,20 @@ Here is the requirements.txt file that includes the necessary modules for runnin
 openai
 dotenv
 requests
+termcolor
+tqdm
 ```
+
+## Changelog
+
+### 2025-07-05 — Community Contributions
+
+- **Fixed missing imports** in `chatgpt.py` — added `sleep`, `colored`, and `tqdm` imports that were causing runtime errors. ([PR #1](https://github.com/davidtkeane/python-command-line-chat-gpt/pull/1) by [@Endermanbugzjfc](https://github.com/Endermanbugzjfc))
+- **Fixed README typo** — corrected `pip3 install direnv` to `pip3 install dotenv`. ([PR #1](https://github.com/davidtkeane/python-command-line-chat-gpt/pull/1) by [@Endermanbugzjfc](https://github.com/Endermanbugzjfc))
+- **Added Nix dev-shell** — `shell.nix` for reproducible development environment with all dependencies. ([PR #2](https://github.com/davidtkeane/python-command-line-chat-gpt/pull/2) by [@Endermanbugzjfc](https://github.com/Endermanbugzjfc))
+
+## Contributors
+
+Thanks to everyone who has contributed to this project!
+
+- [@Endermanbugzjfc](https://github.com/Endermanbugzjfc) — Bug fixes, Nix support
